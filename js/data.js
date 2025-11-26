@@ -11,7 +11,7 @@ const speciesData = {
         anecdote: "Koalas are the only animals that eat eucalyptus leaves exclusively. They sleep up to 22 hours a day!",
         linkGreenIT: "Deforestation for data centers and infrastructure destroys koala habitats. By choosing eco-designed websites and green hosting, we reduce pressure on Australian forests.",
         actions: "Reduce paper consumption by going digital responsibly, choose cloud providers that don't contribute to deforestation, support reforestation projects.",
-        image: "images/Koala.jpg"
+        image: "images/koala.jpg"
     },
     
     eucalyptus: {
@@ -26,7 +26,7 @@ const speciesData = {
         anecdote: "Eucalyptus trees can grow up to 2 meters per year and are vital to koala survival as their only food source.",
         linkGreenIT: "Eucalyptus forests are cleared for urban expansion and infrastructure. Choosing renewable energy data centers helps preserve these ecosystems.",
         actions: "Support forest conservation projects, choose eco-hosting providers that don't contribute to deforestation, optimize website performance to reduce energy consumption.",
-        image: "images/Eucalyptus.jpg"
+        image: "images/eucalyptus.jpg"
     },
     
     polarBear: {
@@ -56,7 +56,7 @@ const speciesData = {
         anecdote: "The golden toad was discovered in 1964 and declared extinct by 2004, making it one of the first casualties of climate change.",
         linkGreenIT: "Rising global temperatures from CO2 emissions contribute to amphibian extinctions. Digital infrastructure's energy consumption accelerates this warming.",
         actions: "Minimize cloud storage usage, delete unused emails and files to reduce server energy consumption, choose green web hosting.",
-        image: "images/Harfang.jpg"
+        image: "images/harfang.jpg"
     },
     
     bee: {
@@ -101,7 +101,7 @@ const speciesData = {
         anecdote: "Lynx can leap up to 7 meters horizontally and have exceptional hearing that can detect prey under thick snow.",
         linkGreenIT: "Forest fragmentation from infrastructure development disrupts lynx territories. Minimizing digital infrastructure footprint helps preserve wildlife corridors.",
         actions: "Support wildlife corridor projects, reduce streaming quality to lower energy demands, choose compact data centers that minimize land use.",
-        image: "images/Lynx.jpg"
+        image: "images/lynx.jpg"
     },
     
     orangutan: {
@@ -146,7 +146,7 @@ const speciesData = {
         anecdote: "Orange spotted filefish exclusively eat coral polyps and their survival is directly linked to coral reef health. Corals are actually animals, not plants!",
         linkGreenIT: "Data centers' CO2 emissions contribute to ocean acidification and warming, bleaching coral reefs. Reducing digital carbon footprint helps preserve marine ecosystems.",
         actions: "Minimize cloud storage, use energy-efficient streaming settings, support marine conservation projects through green tech choices.",
-        image: "images/Corals.jpg"
+        image: "images/corals.jpg"
     },
     
     whaleShark: {
@@ -299,3 +299,4 @@ const speciesData = {
         image: "images/gazelle.jpg"
     }
 };
+
