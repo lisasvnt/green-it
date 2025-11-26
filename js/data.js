@@ -266,7 +266,7 @@ const speciesData = {
         anecdote: "This lizard species colonized Caribbean islands by rafting on debris after hurricanes, showing remarkable adaptability.",
         linkGreenIT: "Sea level rise from climate change threatens coastal habitats. Reducing digital energy consumption helps slow coastal erosion.",
         actions: "Optimize website performance, use efficient coding practices, support coastal conservation through sustainable tech.",
-        image: "images/censky's-ameiva.jpg"
+        image: "images/censkys-ameiva.jpg"
     },
     
     snowLeopard: {
@@ -299,6 +299,7 @@ const speciesData = {
         image: "images/gazelle.webp"
     }
 };
+
 
 
 
