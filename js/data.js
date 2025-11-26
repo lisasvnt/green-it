@@ -266,7 +266,7 @@ const speciesData = {
         anecdote: "This lizard species colonized Caribbean islands by rafting on debris after hurricanes, showing remarkable adaptability.",
         linkGreenIT: "Sea level rise from climate change threatens coastal habitats. Reducing digital energy consumption helps slow coastal erosion.",
         actions: "Optimize website performance, use efficient coding practices, support coastal conservation through sustainable tech.",
-        image: "images/censky's-ameiva.jpg"
+        image: "images/censky's-ameiva.webp"
     },
     
     snowLeopard: {
@@ -281,7 +281,7 @@ const speciesData = {
         anecdote: "Snow leopards can leap up to 15 meters in a single bound! Their long, thick tail helps them balance and keeps them warm in freezing temperatures.",
         linkGreenIT: "Climate change pushes snow leopards to higher altitudes as lower areas warm. Data center emissions contribute to mountain ecosystem disruption.",
         actions: "Choose energy-efficient cloud services, reduce unnecessary data storage, support mountain conservation initiatives.",
-        image: "images/snow-leopard.jpg"
+        image: "images/snow-leopard.webp"
     },
     
     spekesGazelle: {
@@ -299,5 +299,6 @@ const speciesData = {
         image: "images/gazelle.webp"
     }
 };
+
 
 
