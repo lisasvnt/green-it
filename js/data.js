@@ -1,0 +1,72 @@
+const speciesData = {
+    koala: {
+        name: "Koala", 
+        type: "animal",
+        scientificName: "Phascolarctos cinereu",
+        size: "60-85cm",
+        weight: "4-15kg",
+        habitat: "Eucalyptus forests of eastern Australia" ,
+        conservationStatus: "Vulnerable" , 
+        threats: "Deforestation, bushfires, disease",
+        anecdote: "Koalas are the only animals that eat eucalyptus leaves exclusively.",
+        linkGreenIT: "Deforestation for data centers and infrastructure destroys koala habitats. By choosing eco-designed websites and green hosting, we reduce pressure on Australian forests.",
+        actions: "Reduce paper consumption by going digital responsibly, choose cloud providers that don't contribute to deforestation, support reforestation projects.",
+        image: "images/koala.jpg"
+    },
+        polarBear: {
+        name:"Polar Bear", 
+        type: "animal",
+        scientificName: "Ursus maritimus" ,
+        size: "2-3m",
+        weight: "350-700kg",
+        habitat: "Arctic sea ice and coastal areas" ,
+        conservationStatus: "Vulnerable" , 
+        threats: "Climate change, melting ice caps, pollution",
+        anecdote: "Polar bears can swim for days without rest, covering over 600km.",
+        linkGreenIT: "Data centers worldwide consume 1% of global electricity, contributing to climate change that melts Arctic ice and destroys polar bear habitats.",
+        actions: "Reduce energy consumption of devices, use energy-efficient data centers, turn off unused equipment to fight global warming",
+        image: "images/polar-bear.jpg"
+    },
+    seaTurtle: {
+        name: "Sea Turtle",
+        type: "animal",
+        scientificName: "Chelonioidea",
+        size: "0.6-2m",
+        weight: "40-200kg",
+        habitat: "Tropical and subtropical oceans worldwide",
+        conservationStatus: "Endangered",
+        threats: "Plastic pollution, ocean warming, bycatch in fishing nets",
+        anecdote: "Sea turtles can hold their breath for up to 7 hours when resting.",
+        linkGreenIT: "Electronic waste often ends up in oceans. Additionally, the energy used for data transfers contributes to ocean warming, disrupting sea turtle nesting sites.",
+        actions: "Properly recycle e-waste to prevent ocean plastic pollution, reduce streaming quality to lower energy consumption and ocean warming",
+        image: "images/sea-turtle.jpg"
+    },
+    bamboo: {
+        name: "Bamboo",
+        type: "plant",
+        scientificName: "Bambusoideae",
+        size: "Up to 30m",
+        weight: "N/A",
+        habitat: "Tropical and subtropical regions of Asia, Africa, and Americas",
+        conservationStatus: "Least Concern",
+        threats: "Deforestation, climate change, over-harvesting",
+        anecdote: "Bamboo is the fastest-growing plant on Earth, growing up to 91cm in 24 hours.",
+        linkGreenIT: "Bamboo absorbs 35% more CO2 than regular trees. Using bamboo in tech accessories reduces carbon footprint while protecting traditional forests.",
+        actions: "Choose bamboo-based eco-friendly phone cases and laptop stands, support sustainable materials in tech manufacturing",
+        image: "images/bamboo.jpg"
+    },
+    mangrove: {
+        name: "Mangrove",
+        type: "plant",
+        scientificName: "Rhizophora mangle",
+        size: "5-10m",
+        weight: "N/A",
+        habitat: "Coastal areas in tropical and subtropical regions",
+        conservationStatus: "Vulnerable",
+        threats: "Coastal development, aquaculture, pollution",
+        anecdote: "Mangroves store up to 4 times more carbon than rainforests and protect coastlines from storms.",
+        linkGreenIT: "Inefficient websites and apps require more server power, increasing CO2 emissions that contribute to sea-level rise and mangrove destruction.",
+        actions: "Support coastal protection by reducing CO2 emissions through efficient coding practices and optimized websites",
+        image: "images/mangrove.jpg"
+    }
+};
