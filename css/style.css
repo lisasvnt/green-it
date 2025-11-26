@@ -29,7 +29,7 @@ body {
 
 .header {
     width: 100%;
-    background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+    background: linear-gradient(135deg, #2B2C51 0%, #1d1e3d 100%);
     text-align: center;
     padding: 10px;
     border-radius: 0 0 30px 30px;
@@ -53,25 +53,17 @@ body {
 /* Titles */
 h1 {
     font-size: 1.8rem; 
-    color: #2e7d32;
+    color: #2B2C51;
     text-align: center;
     font-weight: 600;
     margin-bottom: 8px;
     letter-spacing: -0.5px;
 }
 
-h2 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 
-    position: relative;
-    display: inline-block;
-}
-
 
 /* Texts */
 span {
-    color: #2e7d32;
+    color: #1d1e3d;
 }
 
 .italic-span {
@@ -86,7 +78,6 @@ span {
 
 p {
     margin-bottom: 4px;
-    line-height: 1.8;
 }
 
 .p-no-bottom-gap {
@@ -137,6 +128,7 @@ p {
     background-color: #f5f7fa;
     padding: 8px;
     border-radius: 10px;
+    width:auto;
 }
 
 .info-section strong {
@@ -144,22 +136,23 @@ p {
     font-weight: 600;
 }
 
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.flex .info-section {
+    flex: 1;
+}
+
 /* Green IT section highlight */
 
 .green-it {
-    background: linear-gradient(to right, #e8f5e9 0%, transparent 100%);
+    background: linear-gradient(135deg, #f9fff9 0%, #e0fce2);
     padding: 8px;
     border-radius: 10px;
     position: relative;
-}
-
-.green-it::before {
-    content: '💻';
-    position: absolute;
-    top: 10 px;
-    right: 10px;
-    font-size: 1.5rem;
-    opacity: 0.3;
 }
 
 .green-it h2 {
@@ -167,19 +160,10 @@ p {
 }
 
 .threats {
-    background: linear-gradient(to right, #ffebee 0%, transparent 100%);
+    background: linear-gradient(135deg, #ffebee 0%, #ffcbd3 100%);
     padding: 8px;
     border-radius: 10px;
     position: relative;
-}
-
-.threats::before {
-    content: '⚠️';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    opacity: 0.3;
 }
 
 .threats h2 {
@@ -196,15 +180,6 @@ p {
     overflow: hidden;
 }
 
-.anecdote::before {
-    content: '💡';
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    opacity: 0.1;
-    transform: rotate(20deg);
-}
 
 /* Tag */
 
