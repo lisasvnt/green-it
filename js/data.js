@@ -236,7 +236,7 @@ const speciesData = {
         anecdote: "Adélie penguins can dive up to 175m deep and hold their breath for 6 minutes. They walk up to 300km across ice to reach their breeding colonies.",
         linkGreenIT: "Global warming from energy consumption melts Antarctic ice, threatening penguin colonies. Green computing helps slow ice loss.",
         actions: "Reduce energy consumption of devices, choose renewable energy providers, minimize data transfers to lower emissions.",
-        image: "images/manchot-adelie.jpg"
+        image: "images/manchot-adelie.jpeg"
     },
     
     caspianSeal: {
@@ -251,7 +251,7 @@ const speciesData = {
         anecdote: "Caspian seals are the only marine mammals in the Caspian Sea. Their population has declined by 90% in the past century.",
         linkGreenIT: "Oil extraction for energy (including data center power) pollutes the Caspian Sea. Transitioning to renewable energy helps protect seal habitats.",
         actions: "Support renewable energy data centers, reduce fossil fuel dependency in tech manufacturing, minimize energy waste.",
-        image: "images/caspian-seal.jpg"
+        image: "images/caspian-seal.webp"
     },
     
     censkysAmeiva: {
@@ -296,7 +296,8 @@ const speciesData = {
         anecdote: "Speke's gazelles have an inflatable nose sac that amplifies alarm calls. They're critically endangered with fewer than 300 individuals in the wild.",
         linkGreenIT: "Desertification accelerated by climate change destroys gazelle habitats. Reducing tech energy consumption helps slow ecosystem degradation.",
         actions: "Minimize streaming quality in non-critical situations, use dark mode to save energy, support renewable energy initiatives.",
-        image: "images/gazelle.jpg"
+        image: "images/gazelle.webp"
     }
 };
+
 
