@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            <title>Biodiversity & Green IT</title>
+            <link rel ="stylesheet" href="css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <header class="header">
+                <img class="logo" src="images/logo.png" alt="Logo">
+            </header>
+
+            <div class="container">
+                <div class="species-grid" id="species-grid"></div>
+            </div>
+               
+            <script src="js/data.js"></script>
+            <script>
+                const grid = document.getElementById('species-grid');
+                for (const [id, species] of Object.entries(speciesData)) {
+                    grid.innerHTML += `
+                    <a href="species.html?id=${id}" class="species-card">
+                        <img src="${species.image}" alt="${species.name}">
+                        <p class="p-uppercase">${species.name}</p>
+                    </a> 
+                    `;
+                }
+            </script>
+        </body>
+
+    </html>
+
