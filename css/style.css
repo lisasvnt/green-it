@@ -197,6 +197,61 @@ p {
     letter-spacing: 0.5px;
 }
 
+
+/* Index */
+
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.species-card {
+    background-color: #f9fff9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3 ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.species-card:hover {
+    box-shadow: 0 4 16px rgba(0, 0, 0, 0.25);
+}
+
+.species-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+a{
+    text-decoration: none;
+    margin: 8px;
+    padding: 8px;
+    color: #1a1a1a;
+}
+
+/* Buttons */
+
+.back-button {
+    display: inline-block;
+    margin: 20px;
+    color: #1d1e3dbb;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3 ease;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.7rem;
+    transition: transform 0.3 ease-in-out;
+}
+
+.back-button:hover {
+    color: #1d1e3d;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -212,5 +267,4 @@ p {
 .container > * {
     animation: fadeInUp 0.6s ease-out;
 }
-
 
