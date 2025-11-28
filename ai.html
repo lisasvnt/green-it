@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI - Green IT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Green IT Logo" class="logo">
+            </a>
+        </div>
+        
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data-storage.html">Data Storage</a></li>
+            <li><a href="green-it.html">Green IT</a></li>
+            <li><a href="web.html">Web</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="score.html">Points Counter</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- En-tête de la page -->
+        <div class="page-header">
+            <h1>🤖 Artificial Intelligence</h1>
+            <p class="page-subtitle">Understanding AI's environmental footprint</p>
+        </div>
+
+        <!-- Section 1 : Introduction -->
+        <div class="info-section">
+            <h2>What is AI's Environmental Impact?</h2>
+            <p>Artificial Intelligence systems require massive computational power for training and running models. From ChatGPT to image generators, every AI interaction consumes significant energy, with large language models requiring thousands of powerful GPUs running continuously.</p>
+            <p>While AI can help solve environmental problems, its own carbon footprint is growing rapidly and needs careful management.</p>
+        </div>
+
+        <!-- Section 2 : Chiffres clés -->
+        <div class="info-section">
+            <h2>📊 Key Figures</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">552 tons</div>
+                    <div class="stat-label">of CO2 to train one large AI model (GPT-3 scale)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">300,000</div>
+                    <div class="stat-label">kg of CO2 for training GPT-3 (equal to 120 cars' yearly emissions)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10-15x</div>
+                    <div class="stat-label">more energy than a Google search for one ChatGPT query</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,287 MWh</div>
+                    <div class="stat-label">electricity to train BERT (AI language model)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3 : Impact environnemental -->
+        <div class="info-section impact-section">
+            <h2>🌍 Environmental Impact</h2>
+            <p><strong>Training Phase:</strong> Training large AI models requires running thousands of GPUs for weeks or months, consuming massive amounts of electricity. This phase generates the most emissions.</p>
+            <p><strong>Inference Phase:</strong> Every time you use AI (ask ChatGPT, generate an image), servers process your request. With billions of queries daily, this adds up significantly.</p>
+            <p><strong>Cooling Requirements:</strong> AI servers generate intense heat, requiring powerful cooling systems that consume additional energy and water.</p>
+            <p><strong>Hardware Waste:</strong> The race for more powerful AI drives demand for cutting-edge chips, leading to faster hardware obsolescence and e-waste.</p>
+        </div>
+
+        <!-- Section 4 : Bonnes pratiques -->
+        <div class="info-section">
+            <h2>✅ Best Practices</h2>
+            <ul class="best-practices-list">
+                <li>Use AI tools only when necessary, not for every task</li>
+                <li>Prefer smaller, more efficient AI models when possible</li>
+                <li>Support companies using renewable energy for AI infrastructure</li>
+                <li>Optimize AI queries to get answers in fewer attempts</li>
+                <li>Consider traditional solutions before jumping to AI</li>
+                <li>Avoid generating multiple images or texts unnecessarily</li>
+                <li>Support research into more energy-efficient AI algorithms</li>
+                <li>Be aware of the environmental cost of your AI usage</li>
+            </ul>
+        </div>
+
+        <!-- Section bonus : Did you know? -->
+        <div class="info-section anecdote">
+            <h3>💡 Did you know?</h3>
+            <p>Training a single large AI model can emit as much CO2 as five cars over their entire lifetimes! However, researchers are working on making AI more efficient – newer models can be 100x more energy-efficient than their predecessors.</p>
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
+
