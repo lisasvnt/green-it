@@ -12,15 +12,36 @@
         </head>
 
         <body>
-            <header class="header">
-                <img class="logo" src="images/logo.png" alt="Logo">
-            </header>
+                <nav class="navbar">
+
+                    <div class="navbar-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Green IT Logo" class="logo">
+                        </a>
+                    </div>
+        
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+        
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="data-storage.html">Data Storage</a></li>
+                        <li><a href="green-it.html">Green IT</a></li>
+                        <li><a href="web.html">Web</a></li>
+                        <li><a href="ai.html">AI</a></li>
+                        <li><a href="score.html">Points Counter</a></li>
+                    </ul>
+                </nav>
 
             <div class="container">
                 <div class="species-grid" id="species-grid"></div>
             </div>
                
             <script src="js/data.js"></script>
+            <script src="js/navbar.js"></script>
             <script>
                 const grid = document.getElementById('species-grid');
                 for (const [id, species] of Object.entries(speciesData)) {
