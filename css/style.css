@@ -2,9 +2,7 @@
     MOBILE FIRST - Bases styles
     =========================== */
 
-
 /* Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -12,72 +10,101 @@
 }
 
 body {
-    font-family: 'Hanken Grotesk';
-    color: #1a1a1a;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Hanken Grotesk'; 
+    line-height: 1.8;
+    color: #333;
+    background: #ffffff;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif; 
+    line-height: 1.8;
+    color: #333;
+    background: #ffffff;
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* Tous les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Tous les boutons */
+button {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Tous les inputs */
+input, textarea, select {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Tous les liens */
+a {
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 24px;
     min-height: 100vh;
 }
 
 .header {
     width: 100%;
-    background: linear-gradient(135deg, #2B2C51 0%, #1d1e3d 100%);
+    background: #2B2C51;
     text-align: center;
-    padding: 10px;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 8px 24px rgba(46, 125, 50, 0.2);
-    position: relative;
-    overflow: hidden;
+    padding: 50px 24px;
+    margin-bottom: 50px;
 }
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -10%;
-    width: 200px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
 
 /* Titles */
 h1 {
-    font-size: 1.8rem; 
+    font-size: 2rem; 
     color: #2B2C51;
-    text-align: center;
     font-weight: 600;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
 }
 
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2B2C51;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #2B2C51;
+}
 
 /* Texts */
 span {
-    color: #1d1e3d;
+    color: #2B2C51;
 }
 
 .italic-span {
     font-style: italic;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .yellow-span {
-    color: #7a3b00;
-    font-size: 0.6rem;
+    color: #8B6914;
 }
 
 p {
-    margin-bottom: 4px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+    color: #555;
 }
 
 .p-no-bottom-gap {
@@ -86,60 +113,50 @@ p {
 
 .p-uppercase {
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 300;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    font-size: 0.75rem;
+    color: #999;
 }
 
 /* Images */
 #species-image {
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
     object-position: center;
     display: block;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-    transform: rotate(-1deg);
-    transition: transform 0.3s ease;
-}
-
-#species-image:hover {
-    transform: rotate(0deg) scale(1.02);
+    margin-bottom: 40px;
+    border-radius: 4px;
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
 }
 
 /* Sections */
-
 .header-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .info-section {
-    margin-bottom: 10px;
-    border-radius: 10px;
+    background: transparent;
     padding: 0;
-    text-align: left;
-    position: relative;
-    background-color: #f5f7fa;
-    padding: 8px;
-    border-radius: 10px;
-    width:auto;
+    margin-bottom: 50px;
 }
 
 .info-section strong {
-    color: #2e7d32;
+    color: #2B2C51;
     font-weight: 600;
 }
 
+/* Flex */
 .flex {
     display: flex;
+    gap: 20px;
     width: 100%;
-    gap: 8px;
+    margin-bottom: 30px;
 }
 
 .flex .info-section {
@@ -147,12 +164,9 @@ p {
 }
 
 /* Green IT section highlight */
-
 .green-it {
-    background: linear-gradient(135deg, #f9fff9 0%, #e0fce2);
-    padding: 8px;
-    border-radius: 10px;
-    position: relative;
+    border-left: 2px solid #2e7d32;
+    padding-left: 24px;
 }
 
 .green-it h2 {
@@ -160,111 +174,687 @@ p {
 }
 
 .threats {
-    background: linear-gradient(135deg, #ffebee 0%, #ffcbd3 100%);
-    padding: 8px;
-    border-radius: 10px;
-    position: relative;
+    border-left: 2px solid #d32f2f;
+    padding-left: 24px;
 }
 
 .threats h2 {
-    color: #ff4545;
+    color: #d32f2f;
 }
 
 .anecdote {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe8a8 100%);
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 8px 24px rgba(255, 212, 105, 0.3);
-    position: relative;
-    overflow: hidden;
+    background-color: #FFFEF8;
+    border-left: 2px solid #D4AF37;
+    padding: 24px;
 }
-
 
 /* Tag */
-
 .tag {
-    border-radius: 100px;
-    background: linear-gradient(135deg, #fff9e6 0%, #ffeaa7 100%);
+    border: 1px solid #2B2C51;
+    background-color: transparent;
     width: fit-content;
-    padding: 6px 20px;
+    padding: 8px 24px;
     text-align: center;
-    margin: 12px auto;
-    font-size: 0.8rem;
-    font-weight: 600;
-
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    margin: 20px auto;
+    font-size: 0.85rem;
+    color: #2B2C51;
+    font-weight: 500;
 }
 
-
-/* Index */
+/* ============================
+    INDEX - Species Grid
+    =========================== */
 
 .species-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 8px;
-    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .species-card {
-    background-color: #f9fff9;
-    border-radius: 10px;
+    background: transparent;
     overflow: hidden;
-    transition: transform 0.3 ease-in-out;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
 }
 
 .species-card:hover {
-    box-shadow: 0 4 16px rgba(0, 0, 0, 0.25);
+    transform: translateX(4px);
 }
 
 .species-card img {
     width: 100%;
-    height: 150px;
+    height: 240px;
     object-fit: cover;
-    border-radius: 2px;
+    margin-bottom: 20px;
 }
 
-a{
-    text-decoration: none;
-    margin: 8px;
-    padding: 8px;
-    color: #1a1a1a;
+.species-card-content {
+    padding: 0;
 }
 
-/* Buttons */
+.species-card h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.3rem;
+    color: #2B2C51;
+    font-weight: 600;
+}
+
+.species-type {
+    margin: 0 0 16px 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.species-status {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid;
+}
+
+/* Status colors */
+.species-status.vulnerable {
+    background: transparent;
+    color: #B8860B;
+    border-color: #B8860B;
+}
+
+.species-status.endangered,
+.species-status.critically-endangered {
+    background: transparent;
+    color: #C41E3A;
+    border-color: #C41E3A;
+}
+
+.species-status.extinct {
+    background: transparent;
+    color: #555;
+    border-color: #555;
+}
+
+.species-status.least-concern,
+.species-status.least-concern-\(declining\) {
+    background: transparent;
+    color: #2e7d32;
+    border-color: #2e7d32;
+}
+
+/* ============================
+    BACK BUTTON
+    =========================== */
 
 .back-button {
     display: inline-block;
-    margin: 20px;
-    color: #1d1e3dbb;
+    margin: 50px 0 0 0;
+    padding: 12px 24px;
+    background: transparent;
+    color: #2B2C51;
     text-decoration: none;
-    border-radius: 10px;
-    transition: all 0.3 ease;
-    font-weight: 600;
+    border: 1px solid #2B2C51;
+    transition: all 0.2s ease;
+    font-weight: 500;
     text-align: center;
-    font-size: 0.7rem;
-    transition: transform 0.3 ease-in-out;
+    font-size: 0.9rem;
 }
 
 .back-button:hover {
-    color: #1d1e3d;
+    background: #2B2C51;
+    color: white;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
+/* Score link on index */
+.score-link {
+    display: block;
+    background: #2B2C51;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    transition: opacity 0.2s ease;
+}
+
+.score-link:hover {
+    opacity: 0.85;
+}
+
+/* ============================
+    NAVBAR
+    =========================== */
+
+.navbar {
+    background: #2B2C51;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    flex-shrink: 0;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: auto;
+}
+
+/* Bouton hamburger (mobile) */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+/* Animation hamburger quand ouvert */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Menu navigation (mobile) */
+.nav-menu {
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    width: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #e5e5e5;
+    transition: right 0.3s ease;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.nav-menu li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 20px 24px;
+    color: #2B2C51;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.2s ease;
+}
+
+.nav-menu a:hover {
+    background: #fafafa;
+}
+
+/* ============================
+    PAGES THÉMATIQUES
+    =========================== */
+
+.page-header {
+    text-align: left;
+    margin: 0 0 50px 0;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    color: #2B2C51;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.page-subtitle {
+    color: #888;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+/* Grille de statistiques */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.stat-card {
+    background: transparent;
+    padding: 0;
+    text-align: left;
+    border-left: 2px solid #2B2C51;
+    padding-left: 24px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2B2C51;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Section impact environnemental */
+.impact-section {
+    background: #FFFEF8;
+    border-left: 2px solid #D4AF37;
+    padding: 32px 24px;
+    margin: 40px 0;
+}
+
+.impact-section h2 {
+    color: #8B6914;
+}
+
+.impact-section strong {
+    color: #8B6914;
+}
+
+/* Liste des bonnes pratiques */
+.best-practices-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.best-practices-list li {
+    padding: 16px 0 16px 40px;
+    position: relative;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.best-practices-list li:last-child {
+    border-bottom: none;
+}
+
+.best-practices-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #2B2C51;
+    font-weight: normal;
+}
+
+/* ============================
+    SCORE TRACKER PAGE
+    =========================== */
+
+/* Setup - Choix des joueurs */
+#setup {
+    background: transparent;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#setup .p-uppercase {
+    font-size: 0.85rem;
+    color: #2B2C51;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#setup .flex {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#setup button {
+    width: 64px;
+    height: 64px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: transparent;
+    color: #2B2C51;
+    border: 1px solid #2B2C51;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#setup button:active {
+    background: #2B2C51;
+    color: white;
+}
+
+/* Game - Zone de jeu */
+#game {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Zone goal */
+#goal {
+    background: #FAFAFA;
+    padding: 24px;
+    text-align: center;
+}
+
+#goal .p-uppercase {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
+#goal span {
+    color: #2B2C51;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* Zone des points */
+#points {
+    background: transparent;
+    padding: 40px 0;
+}
+
+#points .p-uppercase {
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+    text-align: center;
+    font-weight: 600;
+    color: #2B2C51;
+}
+
+#points .flex {
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+}
+
+#minus,
+#plus {
+    width: 64px;
+    height: 64px;
+    font-size: 2rem;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Hanken Grotesk', sans-serif;
+    flex-shrink: 0;
+}
+
+#minus {
+    background: transparent;
+    color: #C41E3A;
+    border-color: #C41E3A;
+}
+
+#minus:active {
+    background: #C41E3A;
+    color: white;
+}
+
+#plus {
+    background: transparent;
+    color: #2B2C51;
+    border-color: #2B2C51;
+}
+
+#plus:active {
+    background: #2B2C51;
+    color: white;
+}
+
+#current-points {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #2B2C51;
+    margin: 0;
+    flex-grow: 0;
+    text-align: center;
+    min-width: 120px;
+}
+
+/* Boutons d'action */
+#new-game-btn {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    background: transparent;
+    color: #2B2C51;
+    border: 1px solid #2B2C51;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#new-game-btn:active {
+    background: #2B2C51;
+    color: white;
+}
+
+/* ============================
+    RESPONSIVE - TABLET (600px+)
+    =========================== */
+
+@media (min-width: 600px) {
+    .container {
+        padding: 60px 40px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    #species-image {
+        height: 360px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .info-section {
+        margin-bottom: 60px;
+    }
+
+    /* Index responsive */
+    .species-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 40px;
+    }
+    
+    .species-card img {
+        height: 260px;
+    }
+
+    /* Pages thématiques */
+    .page-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 24px 40px;
+    }
+
+    .navbar-logo img {
+        width: 60px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        background: transparent;
+        border-top: none;
+        gap: 4px;
+    }
+
+    .nav-menu li {
+        border-bottom: none;
+    }
+
+    .nav-menu a {
+        padding: 10px 20px;
+        color: white;
+        font-size: 0.95rem;
+    }
+
+    .nav-menu a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Score responsive */
+    #setup {
+        padding: 60px 0;
+    }
+
+    #setup button {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    #setup button:hover {
+        background: #2B2C51;
+        color: white;
+    }
+
+    #points .flex {
+        gap: 40px;
+    }
+
+    #minus,
+    #plus {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+
+    #minus:hover {
+        background: #C41E3A;
+        color: white;
+    }
+
+    #plus:hover {
+        background: #2B2C51;
+        color: white;
+    }
+
+    #current-points {
+        font-size: 5rem;
+        min-width: 160px;
+    }
+
+    #new-game-btn:hover {
+        background: #2B2C51;
+        color: white;
     }
 }
 
-.container > * {
-    animation: fadeInUp 0.6s ease-out;
-}
+/* ============================
+    RESPONSIVE - DESKTOP (900px+)
+    =========================== */
 
+@media (min-width: 900px) {
+    .container {
+        max-width: 800px;
+        padding: 80px 60px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #species-image {
+        height: 440px;
+    }
+
+    .header {
+        padding: 70px 40px;
+    }
+
+    .species-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 50px;
+    }
+    
+    .species-card img {
+        height: 300px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .page-header h1 {
+        font-size: 3.2rem;
+    }
+
+    #current-points {
+        font-size: 6rem;
+        min-width: 200px;
+    }
+}
