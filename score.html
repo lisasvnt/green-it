@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Counter of points</title>
+            <link rel ="stylesheet" href="css/style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <nav class="navbar">
+
+                    <div class="navbar-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Green IT Logo" class="logo">
+                        </a>
+                    </div>
+        
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+        
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="data-storage.html">Data Storage</a></li>
+                        <li><a href="green-it.html">Green IT</a></li>
+                        <li><a href="web.html">Web</a></li>
+                        <li><a href="ai.html">AI</a></li>
+                        <li><a href="score.html">Points Counter</a></li>
+                    </ul>
+                </nav>
+
+            <div class="container">
+                <div id="setup">
+                    <p class="p-uppercase">How many players ?</p>
+                    <div class="flex">
+                        <button id="2-players">2</button>
+                        <button id="3-players">3</button>
+                        <button id="4-players">4</button>
+                        <button id="5-players">5</button>
+                        <button id="6-players">6</button>
+                    </div>
+                </div>
+                <div id="game" style="display: none">
+                    <div id="goal">
+                        <p class="p-uppercase">Your goal is <span id="points-goal"></span></p>
+                    </div>
+                    <div id="points">
+                        <p class="p-uppercase">How many points ?</p>
+                        <div class="flex">
+                            <button id="minus">-</button>
+                            <h2 id="current-points">0</h2>
+                            <button id="plus">+</button>
+                        </div>
+                    </div>
+                    <button id="new-game-btn">🔄New Game</button>
+                </div>
+
+            </div>
+               
+            <script src="js/score.js"></script>
+            <script src="js/navbar.js"></script>
+        </body>
+
+    </html>
+
